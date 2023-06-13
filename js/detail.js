@@ -42,12 +42,25 @@ function getData(){
                 </div>
             `;
         });
+        
+        const linkMobile = produk.link;
+        let daftarLinMobile = '';
+        linkMobile.forEach(l => {
+            daftarLinMobile += `
+            <div class="d-grid gap-2 mb-3">
+                <a href="${l.linkproduk}" class="btn btn-secondary d-produk">${l.toko}</a>
+            </div>
+            `;
+        });
 
         const cardProduk = document.querySelector('#detail-produk');
         cardProduk.innerHTML = detailProduk;
 
         const cardLink = document.querySelector('#card-link');
         cardLink.innerHTML = daftarLink;
+        
+        const cardLinkMobile = document.querySelector('#modal-body');
+        cardLinkMobile.innerHTML = daftarLinMobile;
 
     });
 }
