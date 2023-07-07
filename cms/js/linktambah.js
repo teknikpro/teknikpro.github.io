@@ -2,6 +2,19 @@ const url = window.location.href;
 const urlParams = new URLSearchParams(new URL(url).search);
 const idProduk = urlParams.get("id");
 
+const judulHalaman = document.getElementById('judul-halaman');
+
+function getData(){
+  fetch(`https://www.dfunstation.com/api4/android/index.php/product/daftarlink/${idProduk}`)
+  .then(response => response.json())
+  .then(produk => {
+
+      // ganti judul
+      judulHalaman.innerHTML = produk.namaproduct;
+
+  });
+}
+
 
 $(document).ready(function() {
     $('#myForm').submit(function(e) {
@@ -15,7 +28,8 @@ $(document).ready(function() {
         data: formData,
         success: function(response) {
           alert('Data berhasil ditambahkan!'); // Menampilkan pesan sukses
-          location.reload();
+          location.href = `link-daftar.html?id=${idProduk}`;
+          // location.reload();
           // Lakukan tindakan tambahan setelah data ditambahkan, jika diperlukan
         },
         error: function() {
@@ -24,3 +38,5 @@ $(document).ready(function() {
       });
     });
   });
+
+  getData();

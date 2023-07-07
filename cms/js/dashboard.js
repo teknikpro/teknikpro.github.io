@@ -9,9 +9,12 @@ function getData(){
             daftarProduk += `
             <tr>
                 <td>${p.nomor}</td>
+                <td>
+                    <img src="${p.gambar}" class="img-thumbnail" alt="${p.nama_product}" >
+                </td>
                 <td>${p.nama_product}</td>
                 <td>
-                    <a href="link-tambah.html?id=${p.enkripsi}" class="btn btn-primary" >Link Produk</a>
+                    <a href="link-daftar.html?id=${p.enkripsi}" class="btn btn-primary" >Link Produk</a>
                 </td>
                 <td><span class="badge text-bg-primary">publish</span></td>
                 <td>
