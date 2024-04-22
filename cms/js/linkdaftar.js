@@ -28,7 +28,7 @@ function getData(){
                 ${p.publish === "1" ? `<span class="badge text-bg-primary">publish</span>` : `<span class="badge text-bg-danger">draft</span>`}
                 </td>
                 <td>
-                    <a href="" class="btn btn-warning">ubah</a>
+                    <a href="link-edit.html?id=${p.idlink}" class="btn btn-warning">ubah</a>
                     <a href="" class="btn btn-danger">Hapus</a>
                 </td>
             </tr>

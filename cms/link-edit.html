@@ -22,15 +22,20 @@
     <section>
         <div class="container">
 
-            <form action="">
+            <form id="myForm">
 
+              <input type="hidden" name="idlinkproduk" id="idlinkproduk" >
                 <div class="mb-3">
                     <label for="ecommerce" class="form-label">Nama Ecommerce</label>
-                    <input type="text" class="form-control" id="ecommerce" name="ecommerce" placeholder="Nama Ecommerce" required>
+                    <input type="text" class="form-control" id="ecommerce" name="ecommerce" placeholder="Nama Ecommerce" required readonly>
                 </div>
                 <div class="mb-3">
                     <label for="link-produk" class="form-label">Link </label>
                     <input type="text" class="form-control" id="link-produk" name="link-produk" placeholder="Link" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
                 </div>
 
                   <button type="submit" class="btn btn-primary" >Edit</button>
@@ -41,7 +46,8 @@
     </section>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="js/link-edit.js" ></script>
 </body>
 </html>
