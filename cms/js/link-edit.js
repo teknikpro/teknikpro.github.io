@@ -5,6 +5,7 @@ const idProduk = urlParams.get("id");
 const ecomerse = document.getElementById('ecommerce');
 const isiLink = document.getElementById('link-produk');
 const idlinkproduk = document.getElementById('idlinkproduk');
+const publish = document.getElementById('publish');
 
 function getData(){
     fetch(`https://www.dfunstation.com/api4/android/index.php/product/editlink/${idProduk}`)
@@ -16,6 +17,7 @@ function getData(){
         idlinkproduk.value = linkproduk.id_produck_link;
         ecomerse.value = linkproduk.toko;
         isiLink.value = linkproduk.link;
+        publish.value = linkproduk.publish;
   
     });
   }
@@ -31,7 +33,8 @@ function getData(){
         url: `https://www.dfunstation.com/api4/android/index.php/product/updatelink`, 
         data: formData,
         success: function(response) {
-          alert('Data berhasil diedit'); 
+          alert("Link berhasil diedit");
+          location.reload;
         },
         error: function() {
           alert('Terjadi kesalahan. Data gagal ditambahkan.'); 
