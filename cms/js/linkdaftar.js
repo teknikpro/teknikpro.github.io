@@ -29,7 +29,7 @@ function getData(){
                 </td>
                 <td>
                     <a href="link-edit.html?id=${p.idlink}" class="btn btn-warning">ubah</a>
-                    <a href="" class="btn btn-danger">Hapus</a>
+                    <button href="" id="button-hapus" class="btn btn-danger" onclick="confirmDelete(${p.idlink})">Hapus</button>
                 </td>
             </tr>
             `;
@@ -43,3 +43,27 @@ function getData(){
 }
 
 getData();
+
+function confirmDelete(id) {
+    const konfirmasi = confirm("Apakah anda yakin ingin menghapus data ini");
+    if(konfirmasi){
+      $.ajax({
+        type: 'POST',
+        url: `https://www.dfunstation.com/api4/android/index.php/product/hapuslink/${id}`, 
+        success: function(response) {
+            if(response.status === "success"){
+                alert(response.message);
+                location.reload();
+            }else {
+                alert(response.message);
+                location.reload();
+            }
+        },
+        error: function() {
+          alert('Terjadi kesalahan. Data gagal ditambahkan.'); 
+        }
+      });
+    }else {
+        alert("data gagal dihapus");
+    }
+}

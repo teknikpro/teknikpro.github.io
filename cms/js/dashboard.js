@@ -16,7 +16,6 @@ function getData(){
                 <td>
                     <a href="link-daftar.html?id=${p.enkripsi}" class="btn btn-primary" >Link Produk</a>
                 </td>
-                <td>${p.view}</td>
                 <td><span class="badge text-bg-primary">publish</span></td>
                 <td>
                     <a href="" class="btn btn-warning">ubah</a>
