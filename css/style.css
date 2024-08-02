@@ -1,0 +1,124 @@
+body {
+    font-family: 'Montserrat Alternates', Courier, sans-serif;
+    background: linear-gradient(99.27deg, #D6D6D6 -0.18%, rgba(125, 131, 126, 0.58) 101.25%);
+}
+
+.tag-toko {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.penjelasan-toko {
+    font-size: 13px;
+}
+
+.daftar-produk {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* halaman detail */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.judul-produk {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.deskripsi {
+    font-weight: 600;
+}
+
+.navbar {
+    background: linear-gradient(99.27deg, #D6D6D6 -0.18%, rgba(125, 131, 126, 0.58) 101.25%);
+}
+
+
+.link-beli {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.d-produk {
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-link {
+    display: none;
+}
+
+.link-bottom {
+    display: block;
+}
+
+.detail-deskripsi {
+    overflow: hidden;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+@media (min-width: 765px) {
+
+    /* halaman index */
+    .tag-toko {
+        font-weight: 600;
+        font-size: 23px;
+    }
+
+    .penjelasan-toko {
+        font-size: 15px;
+    }
+
+
+
+    /* Halaman Detail */
+
+    .navbar-brand {
+        font-weight: 600;
+    }
+
+    .judul-produk {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .box-link {
+        display: block;
+    }
+
+    .link-bottom {
+        display: none;
+    }
+
+    .judul-produk {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .detail-deskripsi {
+        overflow: auto;
+    }
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
+  <!-- my style -->
+  <title></title>
+</head>
+<body>
+
+  <section>
+        <nav class="navbar bg-body-tertiary mb-4">
+            <div class="container">
+              <a class="navbar-brand" href="dashboard.html">Teknik Pro Official</a>
+            </div>
+        </nav> 
+    </section>
+
+    <section>
+        <div class="container">
+
+            <form id="myForm">
+
+              <input type="hidden" name="idlinkproduk" id="idlinkproduk" >
+                <div class="mb-3">
+                    <label for="ecommerce" class="form-label">Nama Ecommerce</label>
+                    <input type="text" class="form-control" id="ecommerce" name="ecommerce" placeholder="Nama Ecommerce" required readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="link-produk" class="form-label">Link </label>
+                    <input type="text" class="form-control" id="link-produk" name="link-produk" placeholder="Link" required>
+                </div>
+                <div class="mb-3">
+                  <label for="publish" class="form-label">Publish </label>
+                  <input type="text" class="form-control" id="publish" name="publish" placeholder="Publish" required>
+              </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                  <button type="submit" class="btn btn-primary" >Edit</button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="js/link-edit.js" ></script>
+</body>
+</html>

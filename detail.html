@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;500;600;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Teknik Pro</title>
+  </head>
+  <body style="background: #fff;">
+
+    <section>
+        <nav class="navbar bg-body-tertiary mb-4">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Teknik Pro</a>
+            </div>
+        </nav> 
+        <nav aria-label="breadcrumb mb-3">
+            <div class="container">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                </ol>
+            </div>
+          </nav>  
+
+          <div id="detail-produk" class="container detail ">
+            
+          </div>
+    </section>
+
+    <div class="d-grid gap-2 ">
+        <button type="button" class="btn btn-secondary d-produk fixed-bottom link-bottom" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 0;">
+            Link Pembelian
+          </button>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Silahkan Pilih Pembelian</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+    <script src="js/detail.js"></script>
+  </body>
+</html>
